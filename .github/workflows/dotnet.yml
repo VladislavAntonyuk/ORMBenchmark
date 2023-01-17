@@ -1,0 +1,29 @@
+name: .NET
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    
+    - uses: actions/checkout@v3
+
+    - name: Run DB
+      run: docker-compose up -d
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 7.0.x
+        include-prerelease: true
+
+    - name: Build
+      run: |
+        dotnet run -c Release
