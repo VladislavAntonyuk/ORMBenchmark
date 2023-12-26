@@ -9,7 +9,7 @@
   <ItemGroup>
     <PackageReference Include="BenchmarkDotNet" Version="0.13.10" />
     <PackageReference Include="FluentNHibernate" Version="3.3.0" />
-    <PackageReference Include="NHibernate" Version="5.4.7" />
+    <PackageReference Include="NHibernate" Version="5.5.0" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
 
     <PackageReference Include="Dapper" Version="2.1.24" />
