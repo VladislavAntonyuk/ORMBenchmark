@@ -11,7 +11,6 @@ public class AllowNonOptimized : ManualConfig
 
         AddLogger(DefaultConfig.Instance.GetLoggers().ToArray()); // manual config has no loggers by default
         AddExporter(DefaultConfig.Instance.GetExporters().ToArray()); // manual config has no exporters by default
-        AddColumnProvider(DefaultConfig.Instance.GetColumnProviders()
-            .ToArray()); // manual config has no columns by default
+        AddColumnProvider(DefaultConfig.Instance.GetColumnProviders().ToArray()); // manual config has no columns by default
     }
 }
